@@ -4,6 +4,10 @@
 !.env.example
 .dev.vars
 *.pem
+# Personal fill-in-the-blanks secret sheet (see SETUP: `.secrets.local.md`)
+.secrets.local.md
+*.local.md
+secrets.local*
 
 # --- Node / proxy ---
 node_modules/
