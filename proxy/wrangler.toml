@@ -10,7 +10,7 @@
 # Secrets are NEVER stored in this file or in git. For local dev, copy
 # .dev.vars.example to .dev.vars (git-ignored) and run `wrangler dev`.
 
-name = "questclaude-proxy"
+name = "quest"
 main = "src/worker.js"
 compatibility_date = "2026-07-01"
 
