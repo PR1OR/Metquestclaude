@@ -1,0 +1,38 @@
+# --- Secrets: never commit keys or tokens ---
+.env
+.env.*
+!.env.example
+.dev.vars
+*.pem
+
+# --- Node / proxy ---
+node_modules/
+proxy/.wrangler/
+.wrangler/
+
+# --- Unity (scoped to unity-app/) ---
+unity-app/[Ll]ibrary/
+unity-app/[Tt]emp/
+unity-app/[Oo]bj/
+unity-app/[Bb]uild/
+unity-app/[Bb]uilds/
+unity-app/[Ll]ogs/
+unity-app/[Uu]serSettings/
+unity-app/[Mm]emoryCaptures/
+unity-app/[Rr]ecordings/
+unity-app/*.csproj
+unity-app/*.sln
+unity-app/*.user
+unity-app/crashlytics-build.properties
+
+# --- Build artifacts ---
+*.apk
+*.aab
+*.unitypackage
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

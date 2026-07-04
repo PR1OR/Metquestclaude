@@ -1,0 +1,15 @@
+{
+  "name": "questclaude-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Streaming proxy between the Quest Claude headset app and the Anthropic Messages API. Holds the API key server-side.",
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,3 @@
+# Copy to .dev.vars (git-ignored) for `wrangler dev`. NEVER commit real values.
+ANTHROPIC_API_KEY=put-your-anthropic-key-here
+APP_AUTH_TOKEN=put-a-long-random-string-here

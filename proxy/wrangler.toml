@@ -1,0 +1,17 @@
+# Cloudflare Workers config for the Quest Claude proxy.
+#
+# Deploy steps (human, one-time):
+#   1. npm install -g wrangler   (or: npx wrangler)
+#   2. wrangler login
+#   3. wrangler secret put ANTHROPIC_API_KEY   # paste the key from console.anthropic.com
+#   4. wrangler secret put APP_AUTH_TOKEN      # paste a long random string, e.g. `openssl rand -hex 32`
+#   5. wrangler deploy
+#
+# Secrets are NEVER stored in this file or in git. For local dev, copy
+# .dev.vars.example to .dev.vars (git-ignored) and run `wrangler dev`.
+
+name = "questclaude-proxy"
+main = "src/worker.js"
+compatibility_date = "2026-07-01"
+
+# Workers streams Response bodies natively — no extra config needed for SSE.
